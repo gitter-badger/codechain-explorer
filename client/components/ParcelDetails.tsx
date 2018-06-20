@@ -1,7 +1,6 @@
 import * as React from "react";
 
-import { SignedParcel } from "codechain-sdk/lib/primitives";
-import { AssetMintTransaction } from "codechain-sdk/lib/primitives/transaction";
+import { SignedParcel, AssetMintTransaction } from "codechain-sdk";
 
 import { Link } from "react-router-dom";
 

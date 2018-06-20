@@ -1,7 +1,6 @@
 import * as React from "react";
 
-import { Parcel, U256, H160, H256 } from "codechain-sdk/lib/primitives"
-import { PaymentTransaction, Transaction } from "codechain-sdk/lib/primitives/transaction";
+import { Parcel, U256, H160, H256, PaymentTransaction, Transaction } from "codechain-sdk"
 import { RequestSendSignedParcel } from "../components/api_request/RequestSendSignedParcel";
 import TransactionEditor from "../components/TransactionEditor";
 import { Link } from "react-router-dom";
@@ -42,10 +41,10 @@ export default class SendSignedParcel extends React.Component<{}, State> {
             }),
         };
     }
-    
+
     public render() {
         const { transactionType, nonce, fee, networkId,
-            secret, status, transaction, sentHash, errorMessage} = this.state;
+            secret, status, transaction, sentHash, errorMessage } = this.state;
 
         if (status === "sent" && sentHash) {
             return <div>

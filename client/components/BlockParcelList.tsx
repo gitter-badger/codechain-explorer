@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
 
-import { SignedParcel } from "codechain-sdk/lib/primitives";
+import { SignedParcel } from "codechain-sdk";
 
 interface Props {
     parcels: SignedParcel[];

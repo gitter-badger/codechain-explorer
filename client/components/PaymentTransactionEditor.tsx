@@ -1,7 +1,6 @@
 import * as React from "react";
 
-import { H160, U256 } from "codechain-sdk/lib/primitives";
-import { PaymentTransaction } from "codechain-sdk/lib/primitives/transaction";
+import { H160, U256, PaymentTransaction } from "codechain-sdk";
 
 interface Props {
     nonce?: number;
